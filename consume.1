@@ -1,0 +1,25 @@
+.TH "CONSUME" "1" "09/18/2017" "Consume 1\&.0\&.0" "Consume Manual"
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.nh
+.ad l
+
+.SH "NAME"
+consume \- Launch program and hide parent while running
+.SH "SYNOPSIS"
+.sp
+\fBconsume\fR \fIPROGRAM\fR [\fIARGS\fR \&...]
+.SH "DESCRIPTION"
+.sp
+Hide parent window and launch a program.
+.sp
+After launched program returns, show window again.
+.SH "EXAMPLES"
+.sp
+Launch an image:
+.sp
+.if n \{\
+.RS 4
+.\}
+.nf
+consume xdg-open image.png
